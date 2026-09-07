@@ -27,7 +27,28 @@ section{padding:105px 7vw}.head{text-align:center;max-width:760px;margin:0 auto 
 footer{padding:25px 7vw;color:#66738a;font-size:9px;display:flex;justify-content:space-between;border-top:1px solid #fff1}
 @media(max-width:850px){.hero{grid-template-columns:1fr}.stage{height:400px;grid-row:1}.hero>div:first-child{grid-row:2}.cards{grid-template-columns:1fr}.serviceGrid{grid-template-columns:repeat(2,1fr)}.profile{grid-template-columns:1fr}.galaxy{width:285px;height:285px}}
 @media(max-width:480px){.hero{padding-left:6vw;padding-right:6vw}.hero h1{font-size:57px;letter-spacing:-5px}.serviceGrid{grid-template-columns:1fr}.float{display:none}footer{display:block}footer span{display:block;margin-top:8px}}
-</style></head>
+</style>
+<style>
+.creative-wrap{margin-top:34px}
+.creative-grid{display:grid;grid-template-columns:1fr 2fr;gap:20px;align-items:stretch}
+.video-service,.music-box{border:1px solid rgba(255,255,255,.12);background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.018));border-radius:28px;padding:28px;position:relative;overflow:hidden}
+.video-service{display:flex;flex-direction:column;justify-content:center;min-height:390px}
+.video-service:before,.music-box:before{content:"";position:absolute;inset:-80px;background:radial-gradient(circle at 50% 10%,rgba(123,92,255,.18),transparent 45%);pointer-events:none}
+.video-service .big-icon{font-size:48px;margin-bottom:18px}
+.video-service h3,.music-box h3{font-size:28px;margin:0 0 10px}
+.video-service p,.music-box .intro{color:#9d9aaa;font-size:13px;line-height:1.7;position:relative}
+.label-free{display:inline-block;margin-top:22px;padding:8px 12px;border:1px solid rgba(255,255,255,.15);border-radius:999px;color:#bcb8c9;font-size:10px;letter-spacing:1.5px;position:relative}
+.music-plans{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px;position:relative}
+.music-plan{border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:20px;background:rgba(0,0,0,.16)}
+.music-plan h4{font-size:16px;margin:0 0 8px}
+.music-price{font-size:25px;font-weight:700;margin-bottom:12px}
+.music-plan ul{padding:0;margin:0;list-style:none;color:#aaa6b4;font-size:11px;line-height:1.9}
+.music-plan li:before{content:"✓ ";color:#c7a6ff}
+.music-plan .music-btn{display:block;margin-top:16px;text-decoration:none;text-align:center;padding:10px;border:1px solid rgba(255,255,255,.14);border-radius:999px;color:#e5ddf2;font-size:10px;letter-spacing:1px}
+@media(max-width:900px){.creative-grid{grid-template-columns:1fr}.music-plans{grid-template-columns:1fr}}
+</style>
+
+</head>
 <body>
 <canvas id="stars"></canvas><div class="cursorGlow" id="cg"></div>
 <nav><div class="logo">N <span>SOLUTIONS</span></div><a href="#plans">PLANS ↓</a></nav>
@@ -42,12 +63,78 @@ footer{padding:25px 7vw;color:#66738a;font-size:9px;display:flex;justify-content
 <article class="card popular" data-tilt><span class="badge">POPULAR</span><h3>Business Pro</h3><div class="price">₹10,000 <small>starting</small></div><p class="desc">Premium business website with stronger branding, animations and lead generation.</p><div class="features"><div>Everything in Starter</div><div>Premium UI & animations</div><div>Products / services sections</div><div>Instagram & social links</div><div>Advanced SEO structure</div><div>Enquiry / lead form</div></div><a href="#contact">CHOOSE PRO →</a></article>
 <article class="card" data-tilt><h3>3D Experience</h3><div class="price">₹20,000+ <small>custom</small></div><p class="desc">Immersive websites for products, brands and campaigns with 3D interactions.</p><div class="features"><div>Everything in Business Pro</div><div>3D / WebGL experience</div><div>360° product viewer</div><div>Interactive animations</div><div>Custom 3D sections</div><div>Game-style interactions</div></div><a href="#contact">REQUEST CUSTOM →</a></article>
 </div></section>
+<section id="creative-services" class="creative-wrap">
+  <div class="head">
+    <p class="ey">AI CREATIVE SERVICES</p>
+    <h2>AI Video + <span class="grad">AI Music.</span></h2>
+    <p>AI Video Creation is available as a custom service. AI Music has simple packages based on the finished track.</p>
+  </div>
+
+  <div class="creative-grid">
+    <article class="video-service">
+      <div class="big-icon">🎬</div>
+      <p class="ey">AI VIDEO CREATION</p>
+      <h3>AI Videos</h3>
+      <p>Cinematic AI videos, devotional videos, promotional content, reels, lyric videos and custom creative projects.</p>
+      <span class="label-free">CUSTOM QUOTE • NO FIXED PLAN</span>
+      <a class="cta" href="#contact" style="margin-top:22px;position:relative">ENQUIRE FOR AI VIDEO →</a>
+    </article>
+
+    <article class="music-box">
+      <p class="ey">AI MUSIC CREATION</p>
+      <h3>Choose your music package.</h3>
+      <p class="intro">Custom lyrics, composition, AI vocals/instrumental generation and final audio delivery depending on the package.</p>
+
+      <div class="music-plans">
+        <div class="music-plan">
+          <h4>Starter Track</h4>
+          <div class="music-price">₹1,500</div>
+          <ul>
+            <li>30–60 sec music</li>
+            <li>Instrumental / simple AI music</li>
+            <li>1 concept</li>
+            <li>1 revision</li>
+            <li>MP3 delivery</li>
+          </ul>
+          <a class="music-btn" href="#contact">GET STARTED</a>
+        </div>
+
+        <div class="music-plan">
+          <h4>Full Song</h4>
+          <div class="music-price">₹5,000</div>
+          <ul>
+            <li>2–3 min complete song</li>
+            <li>Custom lyrics</li>
+            <li>AI vocals + music</li>
+            <li>2 revisions</li>
+            <li>MP3 + WAV delivery</li>
+          </ul>
+          <a class="music-btn" href="#contact">CHOOSE FULL SONG</a>
+        </div>
+
+        <div class="music-plan">
+          <h4>Premium Song</h4>
+          <div class="music-price">₹10,000</div>
+          <ul>
+            <li>3–5 min custom song</li>
+            <li>Lyrics + composition</li>
+            <li>AI vocals + detailed arrangement</li>
+            <li>3 revisions</li>
+            <li>Final mastering + WAV/MP3</li>
+          </ul>
+          <a class="music-btn" href="#contact">GO PREMIUM</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
 
 <section class="services"><div class="head"><p class="ey">WHAT I BUILD</p><h2>More than just <span class="grad">websites.</span></h2><p>Digital experiences designed to make your brand look modern and memorable.</p></div>
 <div class="serviceGrid">
 <div class="service"><div class="icon">🌐</div><h3>Business Websites</h3><p>Fast, responsive websites for shops, services, local businesses and personal brands.</p></div>
 <div class="service"><div class="icon">🪐</div><h3>3D Websites</h3><p>Galaxy-style interfaces, 3D objects, WebGL scenes, 360° product viewers and interactive experiences.</p></div>
-<div class="service"><div class="icon">🤖</div><h3>AI Video Creation</h3><p>AI-assisted cinematic videos, devotional content, promotional visuals, reels and creative video concepts.</p></div>
+<div class="service"><div class="icon">🎬</div><h3>AI Videos</h3><p>AI-assisted cinematic videos, devotional content, promotional visuals, reels and custom creative video projects.</p></div>
 <div class="service"><div class="icon">⚡</div><h3>Custom Digital Solutions</h3><p>Interactive pages, automation concepts, landing pages and custom experiences built around your idea.</p></div>
 </div></section>
 

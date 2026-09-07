@@ -1,30 +1,12 @@
-# N Solutions — 3D Galaxy Client Plans
+# N Solutions — AI Video + AI Music Packages
 
-Created for V SAI NITHISH, BCA — Artificial Intelligence.
+Updated client-facing website demo.
 
-Included:
-- Premium galaxy/space visual style
-- 3D-style animated N SOLUTIONS logo
-- Client pricing packages
-- Business websites
-- 3D/WebGL websites
-- AI Video Creation service
-- Custom digital solutions
-- Personal profile section
-- GitHub and LinkedIn links
-- WhatsApp contact: 9515301405
-- Responsive mobile layout
-- Interactive 3D tilt cards
+- AI Videos are shown as a custom service with NO fixed plan/pricing.
+- AI Music has three visible packages:
+  - Starter Track — ₹1,500
+  - Full Song — ₹5,000
+  - Premium Song — ₹10,000
+- Existing N Solutions website, profile and website packages are retained.
 
-Profiles:
-GitHub: https://github.com/vuppalapatinithish-lenin
-LinkedIn: https://www.linkedin.com/in/nithish-vuppalapati-bb9225338
-WhatsApp: https://wa.me/919515301405
-
-The email is intentionally not invented because the exact business email was not available in the current context. Replace the note in index.html when the correct email is known.
-
-Before sending to clients:
-1. Edit package prices/features if needed.
-2. Add your exact email.
-3. Upload index.html to GitHub Pages, Netlify, Vercel or your hosting.
-4. Send the resulting public URL.
+These are starting/demo prices and can be changed before client delivery.
